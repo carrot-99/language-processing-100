@@ -3,13 +3,13 @@ import sys
 import numpy as np
 import collections
 
-file1 = "popular-names.txt"
-file2 = "popular-names2.txt"
-col1 = "col1.txt"
-col2 = "col2.txt"
-merge = "merge.txt"
-split = "split.txt"
-sort = "sort.txt"
+file1 = "text/popular-names.txt"
+file2 = "text/popular-names2.txt"
+col1 = "text/col1.txt"
+col2 = "text/col2.txt"
+merge = "text/merge.txt"
+split = "text/split.txt"
+sort = "text/sort.txt"
 
 
 ## 10.行数のカウント
@@ -209,4 +209,4 @@ def func19():
 
 
 ## 実行
-func19()
+func10()
