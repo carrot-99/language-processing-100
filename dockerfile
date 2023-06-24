@@ -1,17 +1,20 @@
-# ベースイメージの指定
+# 一旦枠作ったけど諦めた
 FROM python:3.10.0
 
-# 作業ディレクトリを設定
-WORKDIR /app
+# アプリケーションディレクトリを作成する
+# WORKDIR /usr/src/python
 
-# ホスト上のrequirements.txtをコンテナ内の/appディレクトリにコピー
-COPY requirements.txt .
+# pipのアップデート
+# RUN pip install --upgrade pip
 
-# 依存パッケージのインストール
-RUN pip install --no-cache-dir -r requirements.txt
+# pipでインストールしたいモジュールをrequirements.txtに記述しておいて、
+# コンテナ内でpipにインストールさせる
+# requirements.txtの書き方は[pip freeze]コマンドから参考に出来る
+# COPY requirements.txt ./
+# RUN pip install -r requirements.txt
 
-# ホスト上のコードをコンテナ内の/appディレクトリにコピー
-COPY warm-up-excercise.py .
+# アプリケーションコードをコンテナにコピー
+# COPY . .
 
-# コンテナ内で実行するコマンドを指定
-CMD ["python", "warm-up-excercise.py"]
+# EXPOSE 8000
+# CMD [ "python", "app.py" ]
