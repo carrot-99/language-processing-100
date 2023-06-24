@@ -8,7 +8,7 @@ import japanize_matplotlib
 # pip 23.1.2
 # mecab -o ./neko.txt.mecab ./neko.txt
 
-filename = "./text/neko.txt.mecab"
+filename = "./neko.txt.mecab"
 sentences = []
 
 # def start():
