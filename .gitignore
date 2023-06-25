@@ -1,3 +1,8 @@
+## 第6章
 text/X_train.txt
 text/X_valid.txt
 text/X_test.txt
+## 第7章
+GoogleNews-vectors-negative300.bin.gz
+text/questions-words.txt
+text/questions-words-add.txt
